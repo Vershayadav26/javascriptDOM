@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #000;
+  color: #fff;
+}
+
+/* HEADER */
+header {
+  text-align: center;
+  padding: 25px 10px;
+}
+
+header h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.controls button {
+  background: transparent;
+  border: 1px solid #444;
+  color: #fff;
+  padding: 10px 16px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.controls button:hover {
+  background: #222;
+}
+
+/* EMPTY BLACK AREA */
+.play-area {
+  height: 280px;
+  background: #000;
+}
+
+/* PIANO AREA */
+.piano-wrapper {
+  background: #111;
+  padding: 30px 0;
+  overflow-x: auto;
+}
+
+.piano {
+  position: relative;
+  display: flex;
+  width: max-content;
+  margin: auto;
+}
+
+/* WHITE KEYS */
+.white {
+  width: 60px;
+  height: 230px;
+  background: #fff;
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 10px;
+  color: #000;
+  font-size: 14px;
+}
+
+/* BLACK KEYS */
+.black {
+  position: absolute;
+  width: 40px;
+  height: 140px;
+  background: #000;
+  color: #fff;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 8px;
+  font-size: 12px;
+  z-index: 5;
+  border-radius: 0 0 5px 5px;
+}
+
+/* BLACK KEY POSITIONS */
+.b1 { left: 40px; }
+.b2 { left: 100px; }
+.b3 { left: 220px; }
+.b4 { left: 280px; }
+.b5 { left: 340px; }
+.b6 { left: 460px; }
+.b7 { left: 520px; }
+.b8 { left: 640px; }
+.b9 { left: 700px; }
+.b10 { left: 760px; }
+.b11 { left: 880px; }
+.b12 { left: 940px; }
