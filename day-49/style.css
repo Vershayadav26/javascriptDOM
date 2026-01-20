@@ -15,27 +15,25 @@ body {
 
 #main {
     display: flex;
-    gap: 20px;
+    flex-direction: column; /* 👈 ek ke niche ek */
+    gap: 15px;
 }
 
-
 #elem {
-    padding: 12px 25px;
-    background-color: #1877f2; /* Facebook blue */
+    padding: 12px 30px;
+    background-color: #1877f2;
     color: white;
     border-radius: 6px;
     cursor: pointer;
     font-size: 16px;
+    text-align: center;
     user-select: none;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    transition: 0.3s;
 }
-
 
 #elem:hover {
     background-color: #0f5dc8;
-    transform: scale(1.05);
 }
-
 
 #elem:active {
     transform: scale(0.95);
